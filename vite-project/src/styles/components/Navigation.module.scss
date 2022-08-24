@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Project-Hydra-Regular';
+  src: local('Project-Hydra-Regular'),
+    url('../../assets/font/Project-Hydra-Regular.otf') format('truetype');
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 10px 50px 5px 20px;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin: 15px 0 10px 15px;
+    font-family: 'Project-Hydra-Regular';
+    font-size: 38px;
+
+    color: #fff700;
+    text-shadow: 2px 2px #5bc0eb;
+  }
+  .leftNav {
+    min-width: 50%;
+    margin: 15px 0 10px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      &:hover {
+        color: #5bc0eb;
+        //TODO add glitch effect
+      }
+    }
+  }
+}
