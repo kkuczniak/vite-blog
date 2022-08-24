@@ -1,7 +1,15 @@
 import IRoute from '../interfaces/route';
 import HomePage from '../pages/home';
+import LoginPage from '../pages/login';
 
-const authRoutes: IRoute[] = [];
+const authRoutes: IRoute[] = [
+  {
+    path: '/login',
+    name: 'Login',
+    auth: false,
+    element: LoginPage,
+  },
+];
 
 const blogRoutes: IRoute[] = [];
 
