@@ -10,9 +10,15 @@ const Navigation: React.FunctionComponent<INavigationProps> = (props) => {
         <p>Game Vite</p>
       </NavLink>
       <div className={styles.leftNav}>
-        <NavLink to='/posts'>Posts</NavLink>
-        <NavLink to='/login'>Sign In</NavLink>
-        <NavLink to='/login'>Sign Up</NavLink>
+        <NavLink className={styles.glitch} data-glitch='Posts' to='/posts'>
+          Posts
+        </NavLink>
+        <NavLink className={styles.glitch} data-glitch='Sign Up' to='/login'>
+          Sign Up
+        </NavLink>
+        <NavLink className={styles.glitch} data-glitch='Sign In' to='/login'>
+          Sign In
+        </NavLink>
       </div>
     </nav>
   );
