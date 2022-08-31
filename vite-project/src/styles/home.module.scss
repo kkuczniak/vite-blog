@@ -1,0 +1,12 @@
+.container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0)),
+    url('../assets/homeBg.webp');
+  background-size: cover;
+}
+.BlogPostSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
