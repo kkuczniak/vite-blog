@@ -21,3 +21,5 @@
 ## Screens 
 
 ![blogVite](https://user-images.githubusercontent.com/51820616/187796329-d2bd407b-f5d5-403d-8ef8-776c54d0c57c.png)
+
+![gamebite loginPage](https://user-images.githubusercontent.com/51820616/188012220-eeeae6de-d1d5-4ba8-bba4-139d53ff4bce.png)
