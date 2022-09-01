@@ -1,0 +1,80 @@
+$lightRed: #f0030d;
+$darkRed: #3c0508;
+
+.loginContainer {
+  color: $lightRed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-transform: uppercase;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  span {
+    display: block;
+    width: 80px;
+    height: 8px;
+    background: $lightRed;
+    margin: 0 2rem 0 2rem;
+  }
+}
+.container {
+  max-width: 960px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spanFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0 4px 0;
+  color: #69090e;
+  :nth-child(1) {
+    margin-left: 1rem;
+  }
+  :nth-child(2) {
+    margin-left: 2rem;
+  }
+  span {
+    letter-spacing: 1rem;
+  }
+}
+.welcomeText {
+  width: 70%;
+  margin: 2rem 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+}
+.googleInfo {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  svg {
+    margin-left: 10px;
+  }
+}
+.loginButton {
+  background: $darkRed;
+  border: none;
+  width: 180px;
+  height: 3rem;
+  color: $lightRed;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  margin: 0 0 2rem 0;
+  letter-spacing: 3px;
+}
