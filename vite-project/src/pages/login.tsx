@@ -3,7 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import UserContext from '../context/user';
 import IPageProps from '../interfaces/page';
 import firebase from 'firebase';
-import { SignInWithSocialMedia as SocialMediaPopup } from '../modules/auth';
+import {
+  Authenticate,
+  SignInWithSocialMedia as SocialMediaPopup,
+} from '../modules/auth';
 import logging from '../config/logging';
 import { Providers } from '../config/firebase';
 import styles from '../styles/login.module.scss';
@@ -31,6 +34,18 @@ const LoginPage: React.FunctionComponent<IPageProps> = (props) => {
           if (name) {
             try {
               let fire_token = await user.getIdToken();
+              Authenticate(uid, name, fire_token, (error, _user) => {
+                if (error) {
+                  setError(error);
+                  setAuthenticating(false);
+                } else if (_user) {
+                  userContext.userDispatch({
+                    type: 'login',
+                    payload: { user: _user, fire_token },
+                  });
+                  navigate('/');
+                }
+              });
             } catch (error) {
               setError('Invalid token');
               logging.error(error);
