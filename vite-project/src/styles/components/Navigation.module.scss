@@ -28,11 +28,21 @@
     text-shadow: 2px 2px #5bc0eb;
   }
   .leftNav {
-    min-width: 50%;
+    min-width: 30%;
     margin: 15px 0 10px 15px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    button {
+      cursor: pointer;
+      font-family: 'Montserrat';
+      border: none;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
     a {
       text-decoration: none;
       font-size: 22px;
